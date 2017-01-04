@@ -1,5 +1,6 @@
 # 演示说明
 
+* 开发工具 visual studio 2015 社区版，.Net 版本 4.5.2
 * 打开captcha-csharp-demo.sln
 * 右键解决方案，还原NuGet包
 * 调整 Views\Login\Index.cshtml 文件
@@ -15,3 +16,4 @@
 ```
 
 * 运行演示程序
+* 欢迎fork & pull request帮助改进Demo
