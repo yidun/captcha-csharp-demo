@@ -23,6 +23,7 @@
         "width": 320, // 验证码组件显示宽度
         "verifyCallback": function(ret){ // 用户只要有拖动/点击，就会触发这个回调
           if(ret['value']){ // true:验证通过 false:验证失败
+            // 通过 ret["validate"] 可以获得二次校验数据
             $("#submit-btn").removeAttr("disabled"); // 用户完成拖动之后再启用提交按钮
           }
         }
