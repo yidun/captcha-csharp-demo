@@ -12,12 +12,12 @@ namespace NECaptcha.Sdk
     /// </summary>
     public class NECaptchaVerifier
     {
-        public static string VERIFY_API = "http://c.dun.163yun.com/api/v1/verify"; // verify接口地址
+        public static string VERIFY_API = "http://c.dun.163yun.com/api/v2/verify"; // verify接口地址
         public static string REQ_VALIDATE = "NECaptchaValidate"; // 二次验证带过来的validate
 
         private string captchaId; // 验证码id
         private NESecretPair secretPair; // 密钥对
-        private readonly string VERSION = "v1";
+        private readonly string VERSION = "v2";
         private readonly HttpClient client = Utils.makeHttpClient();
 
         public NECaptchaVerifier(string captchaId, NESecretPair secretPair)
